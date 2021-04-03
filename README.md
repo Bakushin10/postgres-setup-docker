@@ -11,3 +11,8 @@ acrivate postgres
 
 get container info
 `docker inspect postgres-as-local-db -f "{{json .NetworkSettings.Networks }}"` 
+
+
+
+### issue
+adding `- POSTGRES_USER=root` to the postgres environemnt cause user auth issue when activating the postgres in the running container.
