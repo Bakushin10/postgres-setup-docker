@@ -9,6 +9,7 @@ setting local postgres environment using docker and pgAdmin.
 
 - acrivate postgres
 	- `psql -h localhost -U postgres`
+	- `psql {POSTGRES_DB} -U {POSTGRES_USER}`
 
 
 - get container info
