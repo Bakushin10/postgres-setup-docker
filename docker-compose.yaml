@@ -6,13 +6,17 @@ services:
       context: ./postgres
     container_name: postgres-as-local-db
     volumes:
+      # volume
       - ./postgres/data/:/var/lib/postgresql/data
+      # init data
+      - ./postgres/init-data:/docker-entrypoint-initdb.d
+      - ./postgres/init-data/init-data.sql:/docker-entrypoint-initdb.d/init-data.sql
     ports:
       - '5432:5432'
     environment:
       - POSTGRES_DB=POSTGRES_DB
       - POSTGRES_PASSWORD=password
-      # - POSTGRES_USER=root
+      - POSTGRES_USER=shin
   
   pgadmin:
     build:
