@@ -6,6 +6,8 @@ class LoadEnvVariables():
     @staticmethod
     def load_file():
         env = {}
+        # /src/env.properties in server 
+        # "/Users/shin/workspace/postgres-setup-docker/Django/env.properties"
         propertyfile = "/Users/shin/workspace/postgres-setup-docker/Django/env.properties"
         config = configparser.ConfigParser()
         config.read(propertyfile)

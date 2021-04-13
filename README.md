@@ -36,6 +36,14 @@ setting local postgres environment using docker and pgAdmin.
  -  List available functions
 	-  `\df` 
 	
+
+
+### building python image
+
+- update `HOST=postgres`
+- update path to `propertyfile` in `environment.py` to `/src/env.properties`
+
+
 ###  issue
 
-adding `- POSTGRES_USER=root` to the postgres environemnt cause user auth issue when activating the postgres in the running container.
+when fetching the data, python is adding 'api_' prefix for table name instead of just table itself.

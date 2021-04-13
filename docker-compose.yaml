@@ -1,6 +1,14 @@
 version: "3"
 
 services:
+
+  django-api:
+    build:
+      context: ./Django
+    container_name: postgres-django-api
+    ports:
+      - '8000:8000'
+    
   postgres:
     build:
       context: ./postgres
