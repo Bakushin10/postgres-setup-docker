@@ -38,6 +38,16 @@ check the login info by logging into postgres db. users might not exsit if this 
 - List available functions
 	-  `\df`
 
+
+
+### tip
+
+##### table not found error `relation "person" does not exist` 
+
+check if you are accessing to the right DB.
+1. log in db psql `psql {POSTGRES_DB} -U {POSTGRES_USER}`
+2. check to see table you are trying to access exist by `\dt` 
+
 ###  issue
 
 adding `- POSTGRES_USER=root` to the postgres environemnt cause user auth issue when activating the postgres in the running container.
