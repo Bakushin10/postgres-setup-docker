@@ -42,7 +42,7 @@ check the login info by logging into postgres db. users might not exsit if this 
 
 ### tip
 
-##### table not found error `relation "person" does not exist` 
+#### table not found error `relation "person" does not exist` 
 
 check if you are accessing to the right DB.
 1. log in db psql `psql {POSTGRES_DB} -U {POSTGRES_USER}`
