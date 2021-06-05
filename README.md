@@ -13,7 +13,7 @@ setting local postgres environment using docker and pgAdmin.
 -  `{POSTGRES_DB}` and `{POSTGRES_USER}` are defined in `environment` in `docker-compose.yaml`
 
   
-check login info by logging into postgres db. users might not exsit if this is your first time creating the container from the image
+check the login info by logging into postgres db. users might not exsit if this is your first time creating the container from the image
  
 - get container info
 
