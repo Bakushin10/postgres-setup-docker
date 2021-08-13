@@ -6,7 +6,7 @@
 setting local postgres environment using docker and pgAdmin.
 
 - get inside of running container
-	-  `docker exec -it postgres-as-local-db bash`
+	-  `docker exec -it {container_name} bash`
 
 - acrivate postgres
 	- `psql {POSTGRES_DB} -U {POSTGRES_USER}`
